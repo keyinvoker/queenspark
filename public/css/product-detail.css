@@ -1,0 +1,25 @@
+.product-name {
+    color: rgba(var(--bs-primary-rgb));
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-content {
+    padding-top: 1rem;
+}
+
+.product-image {
+    width: 20rem;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.product-description {
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.list-group-item {
+    padding: 1rem;
+}
