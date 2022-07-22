@@ -1,12 +1,14 @@
 <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
 
 <footer class="p-2 text-white text-center bg-primary" id="footer">
-    <nav class="info">
-        <div class="info-card">
+    <div class="info-container">
+
+        <nav class="info">
+            <div class="info-card">
             <h5>Contact Us</h5>
             <ul class="social-media">
                 <li>
-                    <a href="https://wa.me/6285770096008/" class="social-media-item" target="_blank"> <img src="{{ asset('storage/images/whatsapp.png') }}" alt="Whatsapp"> Whatsapp</a>
+                    <a href="https://wa.me/6285770096008/" class="social-media-item" target="_blank"> <img src="{{ asset('storage/images/whatsapp.png') }}" alt="Whatsapp"> WhatsApp</a>
                 </li>
                 <li>
                     <a href="https://www.tokopedia.com/qpreptiles/" class="social-media-item" target="_blank"> <img src="{{ asset('storage/images/tokopedia.png') }}" alt="Tokopedia"> Tokopedia</a>
@@ -25,9 +27,14 @@
 
         <div class="info-card">
             <h5>Address</h5>
-            <p>Taman Ratu</p>
+            <p>
+                Perumahan Taman Ratu BB4 no. 12<br>
+                Kel. Kedoya Utara, Kec. Kebon Jeruk<br>
+                Jakarta Barat
+            </p>
         </div>
     </nav>
+</div>
 
     <div class="copyright">
         <hr>

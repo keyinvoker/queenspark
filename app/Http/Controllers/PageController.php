@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
+
     public function home()
     {
         $animals = Animal::join('categories', 'categories.id', 'animals.category_id')

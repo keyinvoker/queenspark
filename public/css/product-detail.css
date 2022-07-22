@@ -2,16 +2,8 @@
     color: rgba(var(--bs-primary-rgb));
     text-align: center;
     font-weight: bold;
-}
-
-.card-content {
-    padding-top: 1rem;
-}
-
-.product-image {
-    width: 20rem;
-    margin-bottom: 25px;
-    border-radius: 8px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .product-description {
@@ -22,4 +14,41 @@
 
 .list-group-item {
     padding: 1rem;
+}
+
+/* CARD */
+
+.card-content {
+    padding-top: 1rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 2rem;
+    align-items: center;
+    padding: 10px;
+}
+
+.card {
+    margin: 0 50px 0 50px;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.card-img-top {
+    width: 200px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.product-text {
+    margin: 0;
+}
+
+.card-title {
+    text-align: center;
 }

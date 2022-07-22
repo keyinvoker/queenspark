@@ -7,6 +7,11 @@
     grid-template-rows: 1fr 1fr;
 }
 
+.info-container {
+    display: flex;
+    justify-content: center;
+}
+
 .info {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -15,9 +20,8 @@
 }
 
 .info-card {
-    border: black 1.5px solid;
     border-radius: 1rem;
-    margin: 0.3rem;
+    margin: 0.5rem 1rem 0.5rem 1rem;
     background: cadetblue;
     width: 300px;
 }
@@ -43,9 +47,8 @@
 }
 .social-media img {
     width: 30px;
-}
-.social-media img:hover {
-    opacity: 70%;
+    padding-right: 6px;
+    margin-right: 3px;
 }
 .social-media a {
     color: whitesmoke;
@@ -53,7 +56,7 @@
 }
 .social-media a:hover {
     transition: ease-out 0.2s;
-    color: lightgreen;
+    color: darkgreen;
 }
 
 .copyright {

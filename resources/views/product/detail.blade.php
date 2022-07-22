@@ -4,15 +4,17 @@
 
 @section('content')
 <div class="container">
-    <div class="card">
         <div class="card-header">
             <h3 class="product-name">{{ $selected->name }}</h3>
         </div>
 
         <div class="card card-content">
-            <center><img class="product-image " src="{{ asset('storage/'.$selected->image) }}" alt="{{ $selected->name }}"></center>
-
+            
             <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+
+                    <center><img class="card-img-top" src="{{ asset('storage/'.$selected->image) }}" alt="{{ $selected->name }}"></center>
+                </li>
                 <li class="list-group-item">
 
                     📄 <b>Description:</b>
@@ -29,7 +31,7 @@
 
                 <li class="list-group-item">
 
-                    💸 <b>Price:</b> Rp. {{ number_format($selected->price, 0, '.', ',') }}
+                    💸 <b>Price:</b> Rp. {{ number_format($selected->price, 0, ',', '.') }},-
 
                 </li>
 
@@ -40,7 +42,5 @@
                 </li>
             </ul>
         </div>
-
-    </div>
 </div>
 @endsection

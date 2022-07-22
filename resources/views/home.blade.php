@@ -3,6 +3,9 @@
 <link rel="stylesheet" href="{{ asset('css/cards.css') }}">
 
 @section('content')
+
+<h3 class="home-title">Our Reptile Collection</h3>
+
 <div class="card-container">
 
     @forelse($animals as $x)

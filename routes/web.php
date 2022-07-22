@@ -4,22 +4,32 @@ use App\Http\Controllers\AnimalController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PageController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
 Route::fallback(function () {
-	return '<center><br>
-			<h1 style="color:darkred;">YAAAAH!!!</h1>
-			<h2 style="color:red;">Sadly, page not found, mate.<br>
-				Better luck next time!</h2>
-			</center>';
+	return '
+	<div class="d-flex justify-content-center align-items-center">
+		<center>
+			<br>
+			<h1 style="color:darkgreen;">
+				YAAAAH.. :(
+			</h1>
+			<h2 style="color:green;">
+				Sadly, page not found, mate.
+				<br>
+				I wish you luck on your next journey.
+				<br><br>
+				This is the way.
+			</h2>
+		</center>
+	</div>
+	';
 });
 
-Route::get('/', function () {
-	return view('welcome');
-});
-
+Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('/home', [PageController::class, 'home'])->name('home');
 
 Route::get('/profile', [UserController::class, 'profile'])->name('user.profileForm');
