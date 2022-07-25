@@ -11,6 +11,30 @@
     gap: 1rem;
     align-items: center;
 }
+@media screen and (max-width: 1000px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        gap: 1rem;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 800px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 1rem;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 450px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        gap: 1rem;
+        align-items: center;
+    }
+}
 
 .card {
     margin: 0 10% 0 10%;
@@ -34,4 +58,5 @@
 
 .card-title {
     text-align: center;
+    text-transform: capitalize;
 }

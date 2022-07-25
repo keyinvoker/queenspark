@@ -4,7 +4,9 @@
 
 @section('content')
 
-<h3 class="home-title">Our Reptile Collection</h3>
+<h3 class="home-title">Our Collection</h3>
+
+<input type="search" name="" id="" placeholder="Search...">
 
 <div class="card-container">
 

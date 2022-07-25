@@ -1,9 +1,9 @@
 <nav class="navbar navbar-expand-md navbar-light shadow-sm bg-primary justify-content-center">
     <a class="" href="{{ route('home') }}">
-        <img class="logo" src="{{ asset('storage/images/logo.png') }}" alt="">
+        <img class="logo" src="{{ asset('storage/images/freepik-chameleon.png') }}" alt="">
     </a>
-        <a class="navbar-brand" href="{{ route('home') }}">
-            <h2 class="title">Queen's Park Reptiles</h2>
+    <a class="navbar-brand" href="{{ route('home') }}">
+        <h2 class="title">Queen's Park Reptiles</h2>
     </a>
 </nav>
 
@@ -23,13 +23,19 @@
                     </a>
                 </li>
 
+                <li class="nav-item-dropdown">
+                    <a class="nav-link" href="{{ route('about-us') }}">
+                        About Us
+                    </a>
+                </li>
+
                 <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        About
+                        Categories
                     </a>
 
                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        @foreach($animals as $x)
+                        @foreach($categories as $x)
                         <li class="dropdown-item">
                             <a class="navbar-link" href="#">{{ $x->category }}</a>
                         </li>

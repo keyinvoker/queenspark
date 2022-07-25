@@ -15,10 +15,24 @@ class PageController extends Controller
             ->select('animals.*', 'categories.category AS category')
             ->get();
 
+        $categories = Category::select('id', 'category')->get();
+
         $data = [
             'animals' => $animals,
+            'categories' => $categories,
         ];
 
         return view('home', $data);
+    }
+
+    public function about_us()
+    {
+        $categories = Category::select('id', 'category')->get();
+
+        $data = [
+            'categories' => $categories,
+        ];
+
+        return view('about-us', $data);
     }
 }

@@ -1,0 +1,15 @@
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+.img-gecko {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.text-container {
+    padding: 0 40px 0 40px;
+    font-size: 20px;
+    color: darkgreen;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
