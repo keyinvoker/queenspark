@@ -11,9 +11,7 @@ class PageController extends Controller
 
     public function home()
     {
-        $animals = Animal::join('categories', 'categories.id', 'animals.category_id')
-            ->select('animals.*', 'categories.category AS category')
-            ->get();
+        $animals = Animal::get();
 
         $categories = Category::select('id', 'category')->get();
 
@@ -25,7 +23,7 @@ class PageController extends Controller
         return view('home', $data);
     }
 
-    public function about_us()
+    public function aboutUs()
     {
         $categories = Category::select('id', 'category')->get();
 
@@ -34,5 +32,19 @@ class PageController extends Controller
         ];
 
         return view('about-us', $data);
+    }
+
+    public function searchProduct(Request $request){
+        // dd($request->search_query);
+        $animals = Animal::where('name', 'like', "%$request->search_query%")->get();
+
+        $categories = Category::select('id', 'category')->get();
+
+        $data = [
+            'animals' => $animals,
+            'categories' => $categories,
+        ];
+
+        return view('home', $data);
     }
 }

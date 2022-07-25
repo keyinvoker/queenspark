@@ -43,7 +43,7 @@
                     </ul>
                 </li>
                 <!-- Authentication Links -->
-                @guest
+                <!-- @guest
                     @if (Route::has('login'))
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -84,7 +84,7 @@
 
                         </ul>
                     </li>
-                @endguest
+                @endguest -->
             </ul>
         </div>
     </div>

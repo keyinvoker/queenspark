@@ -1,0 +1,21 @@
+.searchbar {
+    display: flex;
+    border: 1px solid green;
+}
+
+.searchbar-form {
+    width: 100%;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.searchbar-form > .searchbar-btn {
+    border: none;
+    margin-left: 6px;
+    background-color: inherit;
+}
+
+.searchbar-btn-img {
+    width: 24px;
+}

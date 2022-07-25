@@ -31,8 +31,9 @@ Route::fallback(function () {
 
 Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('/home', [PageController::class, 'home'])->name('home');
+Route::get('/search', [PageController::class, 'searchProduct'])->name('search');
 
-Route::get('/about-us', [PageController::class, 'about_us'])->name('about-us');
+Route::get('/about-us', [PageController::class, 'aboutUs'])->name('about-us');
 
 Route::get('/profile', [UserController::class, 'profile'])->name('user.profileForm');
 Route::post('/profile', [UserController::class, 'update'])->name('user.profileUpdate');

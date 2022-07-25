@@ -24,7 +24,10 @@ class CategorySeeder extends Seeder
             'category' => 'Frog'
         ]);
         Category::create([
-            'category' => 'Arachnida'
+            'category' => 'Arachnid'
+        ]);
+        Category::create([
+            'category' => 'Vitamin'
         ]);
     }
 }

@@ -77,5 +77,14 @@ class AnimalSeeder extends Seeder
             'quantity' => 100,
             'rating' => 3
         ]);
+        Animal::create([
+            'category_id' => 5,
+            'name' => 'Repashy',
+            'description' => 'This chameleon reads minds. If you hold it on your finger, it will be stunned for 5 seconds because your mind is too stupid for it to handle.',
+            'image' => 'products/repashy.jpg',
+            'price' => 100000,
+            'quantity' => 50,
+            'rating' => 5
+        ]);
     }
 }
